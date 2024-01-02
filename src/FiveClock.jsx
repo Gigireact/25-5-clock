@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ping from "./ping.mp3";
 
 const FiveClock = () => {
   const [breakLength, setBreakLength] = useState(5);
@@ -83,7 +84,7 @@ const FiveClock = () => {
 
   return (
     <div className="fiveclock">
-      <h1>25+5 Clock</h1>
+      <h1>Gift's 25+5 Clock</h1>
       <div className="length-control">
         <div>
           <h2 id="break-label">Break Length</h2>
@@ -101,15 +102,11 @@ const FiveClock = () => {
       <div className="timer">
         <h2 id="timer-label">{timerLabel}</h2>
         <div id="time-left">{formatTime(timeLeft)}</div>
-        <audio id="beep" ref={audioRef} src="ping.mp3" />
+        <audio id="beep" ref={audioRef} src={ping} />
         <button id="start_stop" onClick={toggleTimer}>
           {isActive ? 'Pause' : 'Start'}
         </button>
         <button id="reset" onClick={resetTimer}>Reset</button>
-      </div>
-      <div>
-        <p>A twenty-five + five clock</p>
-        <p> Made with ❤ from Gift</p>
       </div>
     </div>
   );

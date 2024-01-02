@@ -13,16 +13,8 @@ h1 {
   font-size: 60px;
   color: black;
   margin-top: 20px;
-  margin: 60px;
+  margin: 50px;
 }
-
-// /* Clock.css */
-// .clock {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   margin-top: 20px;
-// }
 
 .length-control {
   display: flex;
@@ -41,7 +33,7 @@ h2 {
 }
 
 button {
-  background-color: #007acc;
+  background-color: black;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -59,7 +51,6 @@ span {
 
 .timer {
   text-align: center;
-  margin-top: 20px;
   padding: 10px;
 }
 
@@ -73,61 +64,61 @@ span {
 #time-left {
   font-size: 36px;
   font-weight: bold;
-  color: #007acc;
+  color: black;
   margin-bottom: 10px;
 }
 
 #start_stop, #reset {
-  background-color: #007acc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
   color: #fff;
   border: none;
-  border-radius: 5px;
-  padding: 20px 40px;
-  // align-items: center;
-  // text-align: center;
-  // justify-content: center;
+  border-radius: 20px;
+  padding: 30px 60px;
   font-size: 18px;
-  margin: 20px;
+  margin-left: 600px;
   cursor: pointer;
 }
 
-#start_stop:hover, #reset:hover {
-  background-color: #00528b;
-}
 
 #break-label {
   font-size: 30px;
-  margin: auto;
+  margin: 0;
 }
 
 #session-label {
   font-size: 30px;
-  margin: auto;
+  margin: 0;
 }
 
 #break-decrement {
-  background: rgb(6,14,131);
-  background: linear-gradient(0deg, rgba(6,14,131,1) 0%, rgba(12,25,180,1) 100%);
+  background: black;
+  width: 50px;
+  height: 50px;
   border: none;
-}
-#break-decrement :hover {
-  background: rgb(0,3,255);
-  background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
 }
 
 #break-increment {
-  background: rgb(6,14,131);
-  background: linear-gradient(0deg, rgba(6,14,131,1) 0%, rgba(12,25,180,1) 100%);
+  background: black;
+  width: 50px;
+  height: 50px;
   border: none;
 }
-#break-increment :hover {
-  background: rgb(0,3,255);
-  background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
-}
-/* Add more styling as needed */
 
 p {
   color: black;
   font-weight: small;
-  font-size: 100px;
+  font-size: 15px;
+}
+
+#session-decrement {
+  width: 50px;
+  height: 50px;
+}
+
+#session-increment {
+  width: 50px;
+  height: 50px;
 }

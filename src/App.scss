@@ -1,8 +1,11 @@
 .App, html {
   font-family:Arial, sans-serif ;
-  background-color: rgb(182, 30, 93);
+
+  background: #020024;
+  background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 40%, rgba(0, 212, 255, 1) 100%);
   align-items: center;
   justify-content: center;
+  
 }
 .fiveclock {
   text-align: center;

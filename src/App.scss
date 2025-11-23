@@ -1,4 +1,4 @@
-/* GLOBAL */
+
 html, body {
   margin: 0;
   padding: 0;
@@ -11,7 +11,6 @@ html, body {
   min-height: 100vh;
 }
 
-/* CLOCK CONTAINER */
 .fiveclock {
   width: 100%;
   max-width: 600px;
@@ -19,14 +18,12 @@ html, body {
   text-align: center;
 }
 
-/* TITLE */
 h1 {
   font-size: 48px;
   color: black;
   margin-bottom: 30px;
 }
 
-/* BREAK & SESSION CONTROLS */
 .length-control {
   display: flex;
   justify-content: space-between;
@@ -42,13 +39,11 @@ h1 {
   min-width: 140px;
 }
 
-/* SUBHEADINGS */
 h2 {
   font-size: 22px;
   margin-bottom: 10px;
 }
 
-/* GENERAL BUTTONS */
 button {
   background-color: black;
   color: #fff;
@@ -68,7 +63,6 @@ span {
   margin: 10px;
 }
 
-/* TIMER DISPLAY */
 .timer {
   margin-top: 20px;
   padding: 15px;
@@ -87,7 +81,6 @@ span {
   margin-bottom: 20px;
 }
 
-/* START & RESET BUTTONS */
 #start_stop, #reset {
   display: inline-block;
   justify-content: center;
@@ -102,14 +95,12 @@ span {
   width: auto;
 }
 
-/* INDIVIDUAL BIG BUTTON SIZES */
 #break-decrement, #break-increment,
 #session-decrement, #session-increment {
   width: 50px;
   height: 50px;
 }
 
-/* MOBILE RESPONSIVENESS */
 @media (max-width: 480px) {
   h1 {
     font-size: 32px;
@@ -129,7 +120,7 @@ span {
   }
 
   #start_stop, #reset {
-    width: 100%;
+    width: 50%;
     padding: 18px;
     font-size: 18px;
   }

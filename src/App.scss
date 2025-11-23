@@ -1,127 +1,136 @@
-.App, html {
-  font-family:Arial, sans-serif ;
-
-  background: #020024;
-  background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 40%, rgba(0, 212, 255, 1) 100%);
-  align-items: center;
-  justify-content: center;
-  
-}
-.fiveclock {
-  text-align: center;
+/* GLOBAL */
+html, body {
+  margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
+  background-color: rgb(53, 53, 119);
+  // background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 40%, rgba(0,212,255,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
+/* CLOCK CONTAINER */
+.fiveclock {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* TITLE */
 h1 {
-  font-size: 60px;
+  font-size: 48px;
   color: black;
-  margin-top: 20px;
-  margin: 50px;
+  margin-bottom: 30px;
 }
 
+/* BREAK & SESSION CONTROLS */
 .length-control {
   display: flex;
   justify-content: space-between;
-  width: 500px;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 500px;
   margin: 10px auto;
 }
 
 .length-control div {
-  text-align: center;
+  flex: 1;
+  min-width: 140px;
 }
 
+/* SUBHEADINGS */
 h2 {
-  font-size: 18px;
-  margin-bottom: 5px;
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 
+/* GENERAL BUTTONS */
 button {
   background-color: black;
   color: #fff;
   border: none;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  font-size: 18px;
-  margin: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
   cursor: pointer;
+  margin: 5px;
 }
 
 span {
-  font-size: 24px;
+  display: inline-block;
+  font-size: 28px;
   font-weight: bold;
+  margin: 10px;
 }
 
+/* TIMER DISPLAY */
 .timer {
+  margin-top: 20px;
+  padding: 15px;
   text-align: center;
-  padding: 10px;
 }
 
 #timer-label {
-  font-size: 30px;
+  font-size: 32px;
   margin-bottom: 10px;
-  border-radius: 10px;
-  padding: 10px;
 }
 
 #time-left {
-  font-size: 36px;
+  font-size: 50px;
   font-weight: bold;
   color: black;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
+/* START & RESET BUTTONS */
 #start_stop, #reset {
-  display: flex;
-  align-items: center;
+  display: inline-block;
   justify-content: center;
   background-color: black;
   color: #fff;
-  border: none;
-  border-radius: 20px;
-  padding: 30px 60px;
-  font-size: 18px;
-  margin-left: 600px;
-  cursor: pointer;
+  border-radius: 12px;
+  padding: 30px;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  margin: 10px;
+  width: auto;
 }
 
-
-#break-label {
-  font-size: 30px;
-  margin: 0;
-}
-
-#session-label {
-  font-size: 30px;
-  margin: 0;
-}
-
-#break-decrement {
-  background: black;
-  width: 50px;
-  height: 50px;
-  border: none;
-}
-
-#break-increment {
-  background: black;
-  width: 50px;
-  height: 50px;
-  border: none;
-}
-
-p {
-  color: black;
-  font-weight: small;
-  font-size: 15px;
-}
-
-#session-decrement {
+/* INDIVIDUAL BIG BUTTON SIZES */
+#break-decrement, #break-increment,
+#session-decrement, #session-increment {
   width: 50px;
   height: 50px;
 }
 
-#session-increment {
-  width: 50px;
-  height: 50px;
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .fiveclock {
+    padding: 10px;
+  }
+
+  .length-control {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #time-left {
+    font-size: 42px;
+  }
+
+  #start_stop, #reset {
+    width: 100%;
+    padding: 18px;
+    font-size: 18px;
+  }
 }
